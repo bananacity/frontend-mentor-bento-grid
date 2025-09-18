@@ -263,6 +263,7 @@ body {
 }
 
 .content-chart img {
+  width: 100%;
   max-width: 227.68px;
 }
 
