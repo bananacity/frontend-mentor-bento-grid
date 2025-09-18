@@ -246,10 +246,12 @@ body {
 
 .content-optimise img {
   margin-right: calc(-1 * var(--spacing-400));
+  width: 357.3px;
 }
 
 .content-accounts img {
-  max-height: 66.54px;
+  width: 316.08px;
+  height: auto;
   margin-right: calc(-1 * var(--spacing-300));
   filter: drop-shadow(-9.78px 11.74px 24.45px rgba(99, 26, 123, 0.05));
 }
