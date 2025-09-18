@@ -98,7 +98,6 @@ body {
 
   grid-column: 1;
   grid-row: 1 / -1;
-  height: 100%;
 }
 
 .content-schedule {
@@ -231,10 +230,12 @@ body {
 
 /* Images */
 .content-schedule img {
+  width: 100%;
   max-width: 190.47px;
 }
 
 .content-ai img {
+  width: 100%;
   max-width: 219.95px;
 }
 
