@@ -235,8 +235,9 @@ body {
 }
 
 .content-ai img {
-  width: 100%;
-  max-width: 219.95px;
+  width: 219.95px;
+  max-width: calc(100% + var(--spacing-300));
+  margin-right: calc(-1 * var(--spacing-300));
 }
 
 .content-reviews img {
