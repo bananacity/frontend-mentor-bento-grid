@@ -30,28 +30,28 @@
 }
 
 .text-preset-1 {
-  font-size: 62px;
+  font-size: 3.875rem;
   line-height: 0.935;
   letter-spacing: -3px;
   font-weight: 500;
 }
 
 .text-preset-2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 0.9;
   letter-spacing: -2px;
   font-weight: 500;
 }
 
 .text-preset-3 {
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 0.875;
   letter-spacing: -2px;
   font-weight: 500;
 }
 
 .text-preset-4 {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.11;
   letter-spacing: 0px;
   font-weight: 400;
@@ -70,13 +70,14 @@ body {
 .main-grid {
   display: flex;
   height: 881px;
-  margin-top: 83px;
   gap: var(--spacing-400);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 247px 246px;
   max-width: 1120px;
   width: 100%;
+  margin-top: 83px;
+  margin-inline: var(--spacing-400);
   gap: var(--spacing-400);
 }
 
@@ -88,7 +89,7 @@ body {
 
 .grid-item:hover {
   transform: translate(0, -5px);
-  box-shadow: 0 12px 24px 0 var(--color-purple-100);
+  box-shadow: 0 12px 24px 0 lch(19.87% 0 296.81 / 0.05);
 }
 
 .left-grid {
@@ -271,7 +272,7 @@ body {
 }
 
 /* Media quieries */
-@media (width <= 768px) {
+@media (width <= 888px) {
   .main-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, auto);
@@ -308,9 +309,19 @@ body {
     min-height: 324px;
   }
 
+  .content-reviews h1 {
+    max-width: 536px;
+  }
+
   .content-accounts {
     grid-column: 1;
     grid-row: 2;
+
+    gap: var(--spacing-200);
+  }
+
+  .content-accounts p {
+    max-width: 208px;
   }
 
   .content-calendar {
@@ -343,10 +354,26 @@ body {
     grid-row: 5;
 
     flex-direction: row;
+    gap: var(--spacing-200);
+  }
+
+  .content-growth img {
+    width: auto;
+  }
+
+  .content-optimise img {
+    max-width: 357.3px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .content-ai img {
+    margin: 0;
+    max-width: 100%;
   }
 }
 
-@media (width <= 375px) {
+@media (width <= 524px) {
   .main-grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, auto);
@@ -377,6 +404,10 @@ body {
     grid-column: 1;
     grid-row: 2;
     gap: var(--spacing-200);
+  }
+
+  .content-accounts p {
+    max-width: 100%;
   }
 
   .content-accounts img {
@@ -417,14 +448,14 @@ body {
 
   /* Typography */
   .text-preset-1 {
-    font-size: 46px;
+    font-size: 2.875rem;
   }
 
   .text-preset-2 {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .text-preset-3 {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
 }
